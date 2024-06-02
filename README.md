@@ -14,3 +14,15 @@ When assigning the command codes, an attempt was made to adopt the original assi
 Example: "y50" in the Komsi protocol means that the speed "50" (km/h) should be displayed. In the original program, however, "50" was a servo value, and the speed displayed depends on the dashboard. And the "50" could mean 100 km/h, 30 km/h or something completely different, depending on how it was set in the dashboard. That was probably so that the Arduino code was as simple as possible, because the hardware was not yet as powerful as it is today.
 
 The current status represents an interoperable basis that is already in practical use. However, there is no claim that all values ​​and special cases have already been taken into account. And the topic of "IBIS" in particular has so far been completely ignored.
+
+---
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
