@@ -4,35 +4,11 @@ Here are some simple example parsers for the KOMSI-Protocol as reference. You ar
 
 ## 1. Rust 
 
-```rust
-fn parse_komsi(input: &str) {
-    // Process each line separated by \n
-    for line in input.lines() {
-        let mut chars = line.chars().peekable();
-        
-        while let Some(c) = chars.next() {
-            if c.is_ascii_alphabetic() {
-                let cmd = c;
-                let mut val_str = String::new();
-                
-                // Collect all subsequent digits for this command
-                while let Some(&next_c) = chars.peek() {
-                    if next_c.is_ascii_digit() {
-                        val_str.push(chars.next().unwrap());
-                    } else {
-                        break;
-                    }
-                }
-                
-                if !val_str.is_empty() {
-                    let val: u32 = val_str.parse().unwrap_or(0);
-                    println!("Command: {}, Value: {}", cmd, val);
-                }
-            }
-        }
-    }
-}
-```
+If you are using Rust, it is recommended to use the type-safe
+
+[<img alt="github" src="https://img.shields.io/badge/github-thatzok/komsi--lib-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="20">](https://github.com/thatzok/komsi-lib)
+[<img alt="crates.io" src="https://img.shields.io/crates/v/komsi.svg?style=for-the-badge&color=fc8d62&logo=rust" height="20">](https://crates.io/crates/komsi)
+
 
 ## 2. C
 
