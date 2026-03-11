@@ -19,7 +19,7 @@ This list defines all valid command codes, their data types, and value definitio
 | **M** | HighBeam           | Boolean          | -          | 0: Off, 1: On                       |                              |
 | **N** | BatteryLight       | Boolean          | -          | 0: Off, 1: On                       |                              |
 | **O** | SimulatorType      | Enum             | -          | 0: OMSI 2, 1: TheBus                |                              |
-| **P** | DoorEnable         | Boolean          | -          | 0: Off, 1: On                       | "Türfreigabe"                |
+| **P** | DoorClearance      | Boolean          | -          | 0: Off, 1: On                       | "Türfreigabe"                |
 | **d** | DebugMode          | Integer          |            | Reserved                            | Reserved for future use      |
 | **i** | InfoRequest        | Boolean          | -          | 0: Basic Info, 1: Extended Info     |                              |
 | **o** | Odometer           | Integer (64-bit) | Meters (m) | Total distance traveled             | Use `uint64_t` or equivalent |
